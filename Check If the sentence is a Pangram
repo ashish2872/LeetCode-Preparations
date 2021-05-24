@@ -1,0 +1,10 @@
+class Solution:
+    def checkIfPangram(self, sentence: str) -> bool:
+           from collections import Counter
+           if len(sentence)>=26:
+                if len(Counter(sentence).keys())==26:
+                       return True
+                else:
+                     return False
+           else:
+               return False
