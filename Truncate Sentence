@@ -1,0 +1,9 @@
+class Solution:
+    def truncateSentence(self, s: str, k: int) -> str:
+            qw = s.split(" ")
+            res =""
+            for i in range(k):
+                res = res+ qw[i]+" "
+            return (res.strip())
+            
+            
