@@ -1,0 +1,9 @@
+class Solution:
+    def toLowerCase(self, s: str) -> str:
+               qw = [ord(ele) for ele in s]
+               for i in range(len(qw)):
+                    if qw[i]<=90 and qw[i]>=65:
+                            qw[i] = qw[i]+32
+                    
+               res = "".join(map(chr,qw))
+               return res
